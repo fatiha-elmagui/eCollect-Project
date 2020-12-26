@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDB.Sensiblisation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="362dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="La protection de l’environnement est une affaire qui nous concerne tous. En triant vos déchets, vous contribuez à la préservation des espaces vivants et la restitution d’un environnement propre et écologique.  Sensibiliser ici en France et partout dans le monde est essentiel. Non seulement car les actions de notre quotidien en France ont une incidence sur ce qui se passe ailleurs dans le monde. Mais aussi parce que la situation inverse est observée et démontrée. Une action globale et commune permettra ainsi de répondre à un des plus grands défis du 21e siècle : celui du changement climatique.   Contribuer à bâtir ensemble un avenir souhaitable pour tous, où les femmes et les hommes vivent décemment et en paix dans un environnement préservé "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="272dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/hi"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/declarationdechat"
+        android:layout_width="152dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00C853"
+        android:onClick="onClick"
+        android:text="déclaration du déchet"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#BF11C5"
+        android:textColorHint="#0080D5"
+        android:textColorLink="#C800A7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideTri" />
+
+    <Button
+        android:id="@+id/guideTri"
+        android:layout_width="152dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00C853"
+        android:text="Gide de tri"
+        android:onClick="myClickguideTri"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/declarationdechat"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
